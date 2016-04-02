@@ -1,0 +1,1 @@
+C:\Git\DinerMax3000\DinerMax3000Console\bin\Debug\DinerMax3000Console.exe.config
