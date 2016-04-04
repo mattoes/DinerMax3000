@@ -1,1 +1,6 @@
 C:\Git\DinerMax3000\DinerMax3000Console\bin\Debug\DinerMax3000Console.exe.config
+C:\Git\DinerMax3000\DinerMax3000Console\obj\Debug\DinerMax3000Console.csprojResolveAssemblyReference.cache
+C:\Git\DinerMax3000\DinerMax3000Console\bin\Debug\DinerMax3000Console.exe
+C:\Git\DinerMax3000\DinerMax3000Console\bin\Debug\DinerMax3000Console.pdb
+C:\Git\DinerMax3000\DinerMax3000Console\obj\Debug\DinerMax3000Console.exe
+C:\Git\DinerMax3000\DinerMax3000Console\obj\Debug\DinerMax3000Console.pdb
