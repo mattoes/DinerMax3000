@@ -20,7 +20,7 @@ namespace DinerMax3000Console
                 }
                 else 
                 {
-                       
+                    throw new ApplicationException("You cannot have free or negative valued items");          
                 }
                 
                 }

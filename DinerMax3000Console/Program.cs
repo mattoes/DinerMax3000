@@ -21,7 +21,7 @@ namespace DinerMax3000Console
             outsideDrinks.Disclaimer = "Do not drink and code.";
             outsideDrinks.AddMenuItem("Virgin Cuba Libre", "A classic", 10);
             outsideDrinks.AddMenuItem("Screwdriver", "Makes you hammered.", 15);
-
+            
 
             Order hungryGuestOrder = new Order();
 
@@ -37,6 +37,16 @@ namespace DinerMax3000Console
             }
 
             Console.WriteLine("The total is:" + hungryGuestOrder.Total);
+
+            try 
+            {
+                outsideDrinks.AddMenuItem("Camden Hells", "Nice lager.", 0);
+            }
+            catch (Exception thrownException)
+            {
+                Console.WriteLine(thrownException.Message);
+            }
+
             Console.ReadKey();
 
             
