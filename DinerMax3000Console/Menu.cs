@@ -15,6 +15,7 @@ namespace DinerMax3000Console
             items = new List<MenuItem>();
         }
 
+        //Method
         public void AddMenuItem(string ProductName, string Description, double Price)
         {
             MenuItem item = new MenuItem();
