@@ -21,24 +21,24 @@ namespace DinerMax3000Console
             outsideDrinks.Disclaimer = "Do not drink and code.";
             outsideDrinks.AddMenuItem("Virgin Cuba Libre", "A classic", 10);
             outsideDrinks.AddMenuItem("Screwdriver", "Makes you hammered.", 15);
-            
+
 
             Order hungryGuestOrder = new Order();
 
-            for (int x = 0; x <= summerMenu.items.Count-1; x++) 
+            for (int x = 0; x <= summerMenu.items.Count - 1; x++)
             {
                 MenuItem currentItem = summerMenu.items[x];
                 hungryGuestOrder.items.Add(currentItem);
             }
 
-            foreach(MenuItem currentItem in outsideDrinks.items)
+            foreach (MenuItem currentItem in outsideDrinks.items)
             {
                 hungryGuestOrder.items.Add(currentItem);
             }
 
             Console.WriteLine("The total is:" + hungryGuestOrder.Total);
 
-            try 
+            try
             {
                 outsideDrinks.AddMenuItem("Camden Hells", "Nice lager.", 0);
             }
