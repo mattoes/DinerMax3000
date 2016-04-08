@@ -20,9 +20,18 @@ namespace DinerMax3000.Business
         public static List<Menu> GetAllMenus() 
         {
             MenuTableAdapter taMenu = new MenuTableAdapter();
+            MenuItemTableAdapter taMenuItem = new MenuItemTableAdapter;
             var dtMenu = taMenu.GetData();
             List<Menu> allMenus = new List<Menu>();
-            foreach(dsDinerMax3000.MenuRow menuRow in )
+            foreach (DSDinerMax3000.MenuRow menuRow in dtMenu.Rows) 
+            {
+                Menu currentMenu = new Menu();
+                currentMenu.Name = menuRow.Name;
+                allMenus.Add(currentMenu);
+
+                var dtMenuItems = taMenuItem
+
+            }
         }
 
         //Method
