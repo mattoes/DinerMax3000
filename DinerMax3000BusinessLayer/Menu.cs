@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DinerMax3000.Business.DSDinerMax3000TableAdapters;
 
 namespace DinerMax3000.Business
 {
@@ -13,6 +14,15 @@ namespace DinerMax3000.Business
         public Menu()
         {
             items = new List<MenuItem>();
+        }
+
+
+        public static List<Menu> GetAllMenus() 
+        {
+            MenuTableAdapter taMenu = new MenuTableAdapter();
+            var dtMenu = taMenu.GetData();
+            List<Menu> allMenus = new List<Menu>();
+            foreach(dsDinerMax3000.MenuRow menuRow in )
         }
 
         //Method
