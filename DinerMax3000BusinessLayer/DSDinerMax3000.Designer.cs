@@ -2590,10 +2590,9 @@ SELECT MenuItemId, Name, Description, Price FROM MenuItem WHERE (MenuItemId = @M
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT        MenuItem.MenuItemId, MenuItem.Name, MenuItem.Description, MenuItem.Price
-FROM            MenuItem INNER JOIN
-                         Menu_MenuItem ON MenuItem.MenuItemId = Menu_MenuItem.MenuItemId
-WHERE        (Menu_MenuItem.MenuId = @MenuId)";
+            this._commandCollection[1].CommandText = "SELECT mi.MenuItemId, mi.Name, mi.Description, mi.Price\r\nFROM dbo.MenuItem mi\r\nIN" +
+                "NER JOIN dbo.Menu_MenuItem mmi\r\nON mi.MenuItemId = mmi.MenuItemId\r\nWHERE (mmi.Me" +
+                "nuId = @MenuId)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MenuId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "MenuId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
