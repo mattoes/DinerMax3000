@@ -2277,7 +2277,7 @@ SELECT Menu_MenuItemId, MenuId, MenuItemId FROM Menu_MenuItem WHERE (Menu_MenuIt
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = "SELECT mi.MenuItemId, mi.Name, mi.Description, mi.Price\r\nFROM dbo.MenuItem mi\r\nIN" +
                 "NER JOIN dbo.Menu_MenuItem mmi\r\nON mi.MenuItemId = mmi.MenuItemId\r\nWHERE mmi.Men" +
-                "uId = @MenuId\r\n";
+                "uId = @MenuId";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MenuId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "MenuId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }

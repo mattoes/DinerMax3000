@@ -17,22 +17,22 @@ namespace DinerMax3000.Business
         }
 
 
-        public static List<Menu> GetAllMenus() 
-        {
-            MenuTableAdapter taMenu = new MenuTableAdapter();
-            MenuItemTableAdapter taMenuItem = new MenuItemTableAdapter;
-            var dtMenu = taMenu.GetData();
-            List<Menu> allMenus = new List<Menu>();
-            foreach (DSDinerMax3000.MenuRow menuRow in dtMenu.Rows) 
-            {
-                Menu currentMenu = new Menu();
-                currentMenu.Name = menuRow.Name;
-                allMenus.Add(currentMenu);
+        //public static List<Menu> GetAllMenus() 
+        //{
+        //    MenuTableAdapter taMenu = new MenuTableAdapter();
+        //    MenuItemTableAdapter taMenuItem = new MenuItemTableAdapter;
+        //    var dtMenu = taMenu.GetData();
+        //    List<Menu> allMenus = new List<Menu>();
+        //    foreach (DSDinerMax3000.MenuRow menuRow in dtMenu.Rows) 
+        //    {
+        //        Menu currentMenu = new Menu();
+        //        currentMenu.Name = menuRow.Name;
+        //        allMenus.Add(currentMenu);
 
-                var dtMenuItems = taMenuItem
+        //        var dtMenuItems = taMenuItem.GetMenuItemsByMenuId(menuRow.MenuId);
 
-            }
-        }
+        //    }
+        //}
 
         //Method
         public void AddMenuItem(string ProductName, string Description, double Price)
